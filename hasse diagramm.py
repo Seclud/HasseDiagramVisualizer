@@ -52,7 +52,7 @@ def draw_poset(poset):
     pos = {}
     for i, layer in enumerate(layers):
         for j, node in enumerate(layer):
-            pos[node] = (j, -i)
+            pos[node] = (j, i)
     nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=1200)
     plt.show()
 
